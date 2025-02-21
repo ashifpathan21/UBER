@@ -42,7 +42,7 @@ const Captainsignup = () => {
     }
 
 
-    const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/captains/register`, captainData);
+    const response = await axios.post(`https://uber-backend-4zhe.onrender.com/captains/register`, captainData);
 
     if (response.status === 201) {
       const data = response.data;
