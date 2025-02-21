@@ -19,7 +19,7 @@ const CaptainProtectedWrapper = ({children}) => {
     
             const fetchCaptainProfile = async () => {
                 try {
-                    const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/captains/profile`, {
+                    const response = await axios.get(`https://uber-backend-4zhe.onrender.com/captains/profile`, {
                         headers: { Authorization: `Bearer ${token}` }
                     });
     
