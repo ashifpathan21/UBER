@@ -10,7 +10,7 @@ const ConfirmRidePopup = (props) => {
     const submitHandler = async (e) => {
         e.preventDefault();
 
-        const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/rides/start-ride`, {
+        const response = await axios.get(`https://uber-backend-4zhe.onrender.com/rides/start-ride`, {
             params: {
                 rideId: props.ride._id,
                 otp: otp
