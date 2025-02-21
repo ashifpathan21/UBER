@@ -13,7 +13,7 @@ const Start = () => {
         <div className='bg-white py-5 pb-7 px-4'>
           
           <h2 className=' text-3xl font-bold '>Get Started with Uber </h2>
-          <Link to={'/'}  className=' flex item-center justify-center w-full bg-black text-white py-3 rounded-lg mt-5 font-bold'>Continue</Link>
+          <Link to={'/home'}  className=' flex item-center justify-center w-full bg-black text-white py-3 rounded-lg mt-5 font-bold'>Continue</Link>
         </div>
       </div>
 
