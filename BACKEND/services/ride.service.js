@@ -152,7 +152,7 @@ module.exports.endRide = async({
     const ride = await rideModel.findOne({
         _id: rideId,
         captain: captain._id
-    }).populate('user').populate('captain').select('+otp') ;
+    }).populate('captain').select('+otp') ;
 
     const userDetails = await userModel.findById(ride.user)
 

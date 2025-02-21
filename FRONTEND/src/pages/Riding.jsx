@@ -16,18 +16,11 @@ const Riding = () => {
     navigate('/home');
   }, [navigate]);
 
-  useEffect(() => {
-    // Event listener को एक बार ही सेट करें
-    socket.once('ride-ended', (endedRide) => {
-      console.log('Ride ended event received', endedRide);
-      handleNavigation();
-    });
 
-    // Cleanup function: इवेंट लिसनर को हटाने के लिए
-    return () => {
-      socket.off('ride-ended');
-    };
-  }, [socket, handleNavigation]); // Dependencies में socket और navigation function
+  socket.on('ride-ended' , (data)=> {
+
+navigate('/home')
+})
 
   return (
     <div className="h-screen">
