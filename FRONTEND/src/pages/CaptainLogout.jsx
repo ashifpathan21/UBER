@@ -10,7 +10,7 @@ const CaptainLogout =  () => {
     const navigate = useNavigate()
 
 useEffect(() => {
-    axios.get(`${import.meta.env.VITE_BASE_URL}/captains/logout` , {
+    axios.get(`https://uber-backend-4zhe.onrender.com/captains/logout` , {
         headers: {
        Authorization:`Bearer ${token}`
    }}).then((response) => {
