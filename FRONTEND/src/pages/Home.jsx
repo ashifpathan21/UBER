@@ -60,7 +60,7 @@ socket.on('ride-confirmed' , ride => {
 
   async function getSuggestions(input) {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/maps/get-suggestions`, {
+      const response = await axios.get(`https://uber-backend-4zhe.onrender.com/maps/get-suggestions`, {
         params: { input },  // params को सही तरीके से पास करें
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}` // headers को object के रूप में पास करें
@@ -104,7 +104,7 @@ socket.on('ride-confirmed' , ride => {
 
 async function getFare() {
 
-  const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/rides/get-fare`, {
+  const response = await axios.get(`https://uber-backend-4zhe.onrender.com/rides/get-fare`, {
     params: { pickup,destination },  // params को सही तरीके से पास करें
     headers: {
       Authorization: `Bearer ${localStorage.getItem('token')}` // headers को object के रूप में पास करें
@@ -118,7 +118,7 @@ async function getFare() {
 
 async function createRide(){
   
-  const responce = await axios.post(`${import.meta.env.VITE_BASE_URL}/rides/create` , {
+  const responce = await axios.post(`https://uber-backend-4zhe.onrender.com/rides/create` , {
     pickup ,
     destination ,
     vehicleType
