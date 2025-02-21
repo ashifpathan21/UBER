@@ -21,7 +21,7 @@ const UserProtectedWrappper = ({ children }) => {
         
      
  
-    axios.get(`${import.meta.env.VITE_BASE_URL}/users/profile` , {
+    axios.get(`https://uber-backend-4zhe.onrender.com/users/profile` , {
         headers:{
             Authorization:`Bearer ${token}`
         }
