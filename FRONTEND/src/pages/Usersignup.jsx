@@ -28,7 +28,7 @@ const Usersignup = () => {
 
     
     try {
-      const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/users/register`, newUser)
+      const response = await axios.post(`https://uber-backend-4zhe.onrender.com/users/register`, newUser)
     
       if (response.status === 201) {
         const data = response.data;
