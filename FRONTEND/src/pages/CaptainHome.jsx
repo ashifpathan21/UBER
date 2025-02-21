@@ -87,7 +87,7 @@ socket.on('new-ride' , (data)=> {
 
 async function confirmRide(){
 
- const responce = await axios.post(`${import.meta.env.VITE_BASE_URL}/rides/confirm` , {
+ const responce = await axios.post(`https://uber-backend-4zhe.onrender.com/rides/confirm` , {
   rideId:ride._id ,
   captain: captain ,
 
