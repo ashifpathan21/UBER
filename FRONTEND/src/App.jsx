@@ -24,12 +24,7 @@ const App = () => {
         <Route path='/signup' element={<Usersignup />} />
         <Route path='/captain-login' element={<Captainlogin />} />
         <Route path='/captain-signup' element={<Captainsignup />} />
-        <Route path='/home' element={
-        
-        <
-            <Home />
-          
-        } />
+        <Route path='/home' element={ <Home />  } />
         <Route path='/riding' element={
           
             <Riding />
